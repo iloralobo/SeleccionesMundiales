@@ -111,20 +111,20 @@ public class EjerciciosMapa {
         //EJERCICIO 6
 
 
-        Map<String , List<String>> seleccionesNumJug = new HashMap<>();
-
-        for(Map seleccion : seleccionesJugPosicion.values()){
-            seleccionesNumJug.put(seleccion, seleccionesJug.get(seleccion).size() );
-        }
-
-
-
-
-
-
-
-
-    }
+//        Map<String , List<String>> seleccionesNumJug = new HashMap<>();
+//
+//        for(Map seleccion : seleccionesJugPosicion.values()){
+//            seleccionesNumJug.put(seleccion, seleccionesJug.get(seleccion).size() );
+//        }
+//
+//
+//
+//
+//
+//
+//
+//
+//    }
 
 
 }
