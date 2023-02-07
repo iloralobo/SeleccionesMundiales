@@ -1,5 +1,5 @@
 package modelos;
 
 public enum Continente {
-    ASIA, ÁFRICA, EUROPA, AMÉRICA, OCEANÍA, AS
+    ASIA, ÁFRICA, EUROPA, AMÉRICA, OCEANÍA
 }

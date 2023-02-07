@@ -2,14 +2,17 @@ package modelos;
 
 import java.util.Objects;
 
-public class Pais {
-    private String nombre;
+public class Liga {
 
-    public Pais(String nombre) {
-        this.nombre = nombre;
+    private String nombre;
+    private Pais pais;
+
+    public Liga() {
     }
 
-    public Pais(){
+    public Liga(String nombre, Pais pais) {
+        this.nombre = nombre;
+        this.pais = pais;
     }
 
     public String getNombre() {
@@ -20,24 +23,32 @@ public class Pais {
         this.nombre = nombre;
     }
 
+    public Pais getPais() {
+        return pais;
+    }
+
+    public void setPais(Pais pais) {
+        this.pais = pais;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Pais pais = (Pais) o;
-        return Objects.equals(nombre, pais.nombre);
+        Liga liga = (Liga) o;
+        return Objects.equals(nombre, liga.nombre) && Objects.equals(pais, liga.pais);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nombre);
+        return Objects.hash(nombre, pais);
     }
 
     @Override
     public String toString() {
-        return "Pais{" +
+        return "Liga{" +
                 "nombre='" + nombre + '\'' +
+                ", pais=" + pais +
                 '}';
     }
-    //tus mulas
 }
